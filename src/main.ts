@@ -8,7 +8,11 @@ async function bootstrap() {
     logger: ["error", "warn", "debug"],
   });
 
-  const allowedOrigins = ["http://127.0.0.1:4000", "http://localhost:4000"];
+  const allowedOrigins = [
+    "http://127.0.0.1:4000",
+    "http://localhost:4000",
+    "https://studio-dev.eduquiz.vn",
+  ];
 
   const corsOptions: CorsOptions = {
     origin: (origin, callback) => {
